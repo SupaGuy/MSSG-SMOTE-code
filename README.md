@@ -1,7 +1,5 @@
-# MSSG-SMOTE-code
-MOF-Quartile-driven synthetic sample generation 
+# MOF-Quartile-driven synthetic sample generation 
 
-# MSSG-SMOTE-Class
 
 ## Overview
 
