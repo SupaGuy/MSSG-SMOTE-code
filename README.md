@@ -3,13 +3,13 @@
 
 ## Overview
 
-This project contains the **MSSG (MOF-based Synthetic Sample Generation)** class, a custom oversampling technique designed to handle imbalanced datasets. It combines **MOF (Multi-Objective Fuzziness)** scores with a hybrid approach of **Directional Oversampling** and **SMOTE** (Synthetic Minority Over-sampling Technique) to generate synthetic minority class samples.
+This project contains the **MSSG (MOF-based Synthetic Sample Generation)** class, a custom oversampling technique designed to handle imbalanced datasets. It combines **MOF (Mass-ratio-variance Outlier Factor)** scores with a hybrid approach of **Directional Oversampling** and **SMOTE** (Synthetic Minority Over-sampling Technique) to generate synthetic minority class samples.
 
-The algorithm stratifies minority samples based on their MOF scores (which indicate difficulty or "fuzziness") and applies different generation strategies accordingly to improve the quality of the synthetic data.
+The algorithm stratifies minority samples based on their MOF scores and applies different generation strategies accordingly to improve the quality of the synthetic data.
 
 ## Features
 
-- **MOF Score Calculation**: Uses `pymof` to calculate fuzzy scores for data instances.
+- **MOF Score Calculation**: Uses `pymof` to calculate scores for data instances.
 - **Quartile-based Stratification**: Classifies samples into groups based on MOF score quartiles.
 - **Directional Sampling**: A custom method to generate synthetic samples along the direction of nearest minority neighbors.
 - **Hybrid Strategy**: Dynamically chooses between Directional Sampling and SMOTE based on the density and distribution of the minority samples in the stratified groups.
